@@ -10,4 +10,9 @@ class Friend extends Model
     {
     	return $this->belongsTo(Rogue::class);
     }
+
+    public function path()
+    {
+    	return '/friends/' . $this->id;
+    }
 }

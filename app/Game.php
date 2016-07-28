@@ -10,4 +10,9 @@ class Game extends Model
     {
     	return $this->belongsTo(Rogue::class);
     }
+
+    public function path()
+    {
+    	return '/games/' . $this->id;
+    }
 }

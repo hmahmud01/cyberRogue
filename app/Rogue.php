@@ -15,4 +15,9 @@ class Rogue extends Model
     {
     	return $this->hasMany(Game::class);
     }
+
+    public function path()
+    {
+    	return '/rogues/' . $this->id;
+    }
 }
